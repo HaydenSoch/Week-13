@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HSoch's better Colored Button Grid haha</title>
+    <style>
+      body {
+        background: linear-gradient(
+          135deg,
+          rgb(11, 31, 132),
+          rgb(5, 49, 73),
+          rgb(85, 186, 181),
+          rgb(5, 49, 73),
+          rgb(11, 31, 132)
+        );
+        background-size: 350% 350%;
+
+        animation: gradient 7s ease infinite;
+        height: 200vh;
+      }
+
+      @keyframes gradient {
+        0% {
+          background-position: 0% 50%;
+        }
+        50% {
+          background-position: 100% 50%;
+        }
+        100% {
+          background-position: 0% 50%;
+        }
+      }
+
+      /* Grid container: creates 5 equal columns */
+      .button-grid {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        gap: 15px; /* Space between rows and columns */
+        margin: 30px auto;
+      }
+
+      /* Shared styling for all buttons */
+      .btn {
+        padding: 16px 20px;
+        font-size: 16px;
+        font-weight: bold;
+        color: white;
+        border: double;
+        border-radius: 15px;
+        cursor: pointer;
+        transition: opacity 0.2s ease;
+      }
+
+      .btn:hover {
+        opacity: 0.85;
+      }
+
+      /* Individual button colors */
+      .btn-1 {
+        background-color: #3fe639;
+      } /* Red */
+      .btn-2 {
+        background-color: #f4a261;
+      } /* Orange */
+      .btn-3 {
+        background-color: #e9c46a;
+        color: #222;
+      } /* Yellow with dark text */
+      .btn-4 {
+        background-color: #2a9d8f;
+      } /* Teal */
+      .btn-5 {
+        background-color: #457b9d;
+      } /* Steel Blue */
+      .btn-6 {
+        background-color: #1d3557;
+      } /* Navy */
+      .btn-7 {
+        background-color: #8338ec;
+      } /* Purple */
+      .btn-8 {
+        background-color: #ff006e;
+      } /* Magenta */
+      .btn-9 {
+        background-color: #38b000;
+      } /* Green */
+      .btn-10 {
+        background-color: #a5f6ff;
+        color: #222;
+      } /* cyan */
+      .btn-11 {
+        background-color: #820000;
+      } /* red */
+      .btn-12 {
+        background-color: #a20077;
+      } /* hot pink */
+      .btn-13 {
+        background-color: #d08ee8;
+      } /* periwinkle */
+      .btn-14 {
+        background-color: #806c42;
+      } /* tope */
+      .btn-15 {
+        background-color: #cbb7c0;
+      } /* grey */
+      .btn-16 {
+        background-color: #0b0410;
+      } /* black */
+      .btn-17 {
+        background-color: #8ace00;
+        color: #222;
+      } /* brat */
+      .btn-18 {
+        background-color: #04120d;
+      } /* dark green */
+      .btn-19 {
+        background-color: #280808;
+      } /* blood */
+      .btn-20 {
+        background-color: #2f0f08;
+      } /* rust */
+    </style>
+  </head>
+  <body>
+    <div class="button-grid">
+      <!-- Row 1 -->
+      <button class="btn btn-1">Home</button>
+      <button class="btn btn-2">Profile</button>
+      <button class="btn btn-3">Messages</button>
+      <button class="btn btn-4">Settings</button>
+      <button class="btn btn-5">Analytics</button>
+
+      <!-- Row 2 -->
+      <button class="btn btn-6">Reports</button>
+      <button class="btn btn-7">Billing</button>
+      <button class="btn btn-8">Support</button>
+      <button class="btn btn-9">Log Out</button>
+      <button class="btn btn-10">something</button>
+
+      <!-- Row 3 -->
+      <button class="btn btn-11">a button?</button>
+      <button class="btn btn-12">a button!</button>
+      <button class="btn btn-13">kiss my button</button>
+      <button class="btn btn-14">BUTTTOOOONNNN</button>
+      <button class="btn btn-15">hi my name button</button>
+
+      <!-- Row 4 -->
+      <button class="btn btn-16">louis button</button>
+      <button class="btn btn-17">brat</button>
+      <button class="btn btn-18">how are there still buttons</button>
+      <button class="btn btn-19">no more buttons?</button>
+      <button class="btn btn-20">no more buttons :(</button>
+
+      <!-- Row 5 -->
+      <input
+        id="gain"
+        type="range"
+        min="0"
+        max="1"
+        step="0.01"
+        value="0.2"
+      /><label id="gainDisplay1">Gain 1</label>
+
+      <input
+        id="gain"
+        type="range"
+        min="0"
+        max="1"
+        step="0.01"
+        value="0.2"
+      /><label id="gainDisplay2">Gain 2</label>
+
+      <input
+        id="gain"
+        type="range"
+        min="0"
+        max="1"
+        step="0.01"
+        value="0.2"
+      /><label id="gainDisplay3">Gain 3</label>
+
+      <input
+        id="gain"
+        type="range"
+        min="0"
+        max="1"
+        step="0.01"
+        value="0.2"
+      /><label id="gainDisplay4">Gain 4</label>
+
+      <input
+        id="gain"
+        type="range"
+        min="0"
+        max="1"
+        step="0.01"
+        value="0.2"
+      /><label id="gainDisplay5">Gain 5</label>
+    </div>
+  </body>
+</html>
